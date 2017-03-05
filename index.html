@@ -1,0 +1,145 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia for Days</title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Sirin+Stencil" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<body>
+
+
+<div class="title"><h2>Game of Thrones Trivia</h2> <br><h4>Winter is Here.</h4></div>
+
+<div class="time">....</div>
+
+<div class="container">
+	<div class="row Q1">Who had molten gold poured over their head like a deadly Noel's House Party gunge tank? 
+		<br> <label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox1" value="option1"> Robb Stark
+			</label> 
+			<label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2"> Khal Drogo
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox3" value="option3"> Viserys Targaryen
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox4" value="option4"> Maester Luwin
+			</label>
+	</div>
+
+	<div class="row Q2">What is the name of Jon Snow's Direwolf?
+		<br> <label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox1" value="option1"> Grey Wind
+			</label> 
+			<label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2"> Ghost
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox3" value="option3"> Ramsay
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox4" value="option4"> Graham		
+  		  </label>
+	</div>
+
+	<div class="row Q3">Only two characters appeared in every episode before they were killed off. They were…
+		<br> <label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox1" value="option1"> Robb Stark and Viserys Targaryen
+			</label> 
+			<label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2">Tim Minchin and Hot Chip
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox3" value="option3"> Robert Baratheon and Ned Stark
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox4" value="option4"> Elizabeth Bathory and Ned Sherrin	
+  		  </label>
+
+	</div>
+
+	<div class="row Q4">Who was stabbed in the back by a magic smoke-baby-ghost thing?
+		<br> <label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox1" value="option1">  Renly Baratheon
+			</label> 
+			<label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2">Ramsay
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox3" value="option3"> Bronn
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox4" value="option4"> Lord Commander Mormont
+  		  </label>
+
+	</div>
+
+	<div class="row Q5">Which house’s motto is “Fire and Blood”?
+		<br> <label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox1" value="option1"> Greyjoy
+
+			</label> 
+			<label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2">Targaryen
+
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox3" value="option3"> Martel
+			</label>
+			<label class="checkbox-inline">
+  		  <input type="checkbox" id="inlineCheckbox4" value="option4"> Stark
+  		  </label>
+
+	</div>
+
+
+
+</div>
+	<div class="submit">  <button>Submit!</button></div>
+
+
+	<script type="text/javascript">
+
+
+var number = 60;
+timer();
+
+function timer(){
+
+   function run() {
+     intervalId = setInterval(decrement, 1000);
+
+   }
+   function decrement() {
+     number--;
+     console.log(number);
+     $(".time").html("Time remaining: " + number);
+     if (number === 0) {
+       clearInterval(intervalId);
+       
+     }
+   }
+   run();
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

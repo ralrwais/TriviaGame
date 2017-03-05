@@ -1,0 +1,113 @@
+
+
+
+body { 	align-self: center;
+		background-image: url("https://images5.alphacoders.com/403/403408.jpg");
+
+}
+
+
+.time {
+
+			text-align: center;
+			font-size: 30px;
+			color: #cccccc;
+}
+
+
+.title {
+			margin-top: 30px;
+}
+
+.title > h2 { display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-family: 'Cinzel', serif; 
+		font-size: 60px;
+		
+
+
+
+}
+.title > h4 { display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-family: 'Sirin Stencil', cursive;
+		font-size: 30px;
+		
+
+
+}
+.container  { display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-top: 20px;
+		font-size: 20px;
+
+		
+
+
+}
+.Q1 {
+		padding-bottom: 10px;	
+		background-color: #808080;
+		margin-top: 20px;
+		height: 80px;
+		opacity: 0.9;
+		border-radius: 20px;
+}
+.Q2 {
+		padding-bottom: 10px;	
+		background-color: #808080;
+		margin-top: 20px;
+		height: 80px;
+		opacity: 0.9;
+		border-radius: 20px;
+}		
+.Q3 {
+		padding-bottom: 10px;	
+		background-color: #808080;
+		margin-top: 20px;
+		height: 90px;
+		opacity: 0.9;
+		border-radius: 20px;
+}
+.Q4 {
+		padding-bottom: 10px;	
+		background-color: #808080;
+		margin-top: 20px;
+		height: 80px;
+		opacity: 0.9;
+		border-radius: 20px;
+}
+
+.Q5 {
+		padding-bottom: 10px;	
+		background-color: #808080;
+		margin-top: 20px;
+		height: 80px;
+		opacity: 0.9;
+		border-radius: 20px;
+}	
+.submit {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		margin-top: 20px;
+		font-size: 25px;
+		margin-bottom: 25px;
+		color: #808080;
+
+}
+.submit > button {border-radius: 20px;}
+
+
+
+
+
+
+

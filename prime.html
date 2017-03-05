@@ -1,0 +1,35 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+	var i = 30;
+
+function startTimer() {
+
+    var countdownTimer = setInterval(function() {
+    	i = countdownTimer;
+        console.log(i);
+        i = i - 1;
+
+        if (i <= 0) {
+            clearTimeout(countdownTimer);
+        }
+
+    }, 1000);
+
+}
+
+startTimer();
+
+
+</script>
+
+
+</body>
+</html>
