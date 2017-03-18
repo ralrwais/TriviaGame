@@ -10,6 +10,13 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+<!-- 
+  You generally want to stick javascript script tags at the bottom of your body.
+  This is because they will stop the rest of the html from being parsed and rendered
+  until after the script has finished downloading and it's best practice to show 
+  something to the user asap even if it's not initially interactive
+  (most users won't even notice 🙃)
+ -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 <body>
@@ -108,11 +115,29 @@
 
 	<script type="text/javascript">
 
+// While it may not seem imperative for smaller programs, you should get in the habit
+// linking to a separate js file and also wrapping your js code in either a 
+// $(document).ready(function(){
+//  // code goes here
+// })
+// or an IIFE (immediately invoked function expression)
+// ;(function(){
+//  // code goes here
+// })()
 
-var number = 60;
 timer();
 
+// Well done timer function! Try to remember next time
+// to remove any console.logs from your code before you submit it.
 function timer(){
+  // it's best to keep variables scoped within the smallest context possible
+  // since you're only using `number` within the timer, you can go ahead and 
+  // declare it here rather than on the global scope.
+  var number = 60;
+  // since you hadn't declared `intervalId` anywhere it was assigned to the 
+  // global scope. By declaring it with the `var` keyword here the variable 
+  // is contained within the scope of the timer function.
+  var intervalId;
 
    function run() {
      intervalId = setInterval(decrement, 1000);
@@ -120,7 +145,7 @@ function timer(){
    }
    function decrement() {
      number--;
-     console.log(number);
+     // console.log(number);
      $(".time").html("Time remaining: " + number);
      if (number === 0) {
        clearInterval(intervalId);
@@ -129,6 +154,21 @@ function timer(){
    }
    run();
 }
+
+// So one thing that could make getting the results of the quiz a bit easier would be
+// to store the questions and answers in a javascript array like so:
+var questions = [
+  {
+    question: 'Who had molten gold poured over their head like a deadly Noel\'s House Party gunge tank?',
+    answers: [ 'Robb Stark', 'Khal Drogo', 'Viserys Targaryen', 'Maester Luwin' ],
+    answer: 'Viserys Targaryen'
+  },
+  // and so on and so forth...
+]
+
+// you can then dynamically create the dom nodes to display the questions using jQuery
+// And then you'd set up a click listener on your questions and be able to compare
+// the user's selection to the question's answer after determining which question it was.
 
 
 
